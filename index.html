@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="ArchBook — a considered laptop, configured your way. Choose your finish, hardware and Arch-based Linux operating system.">
+  <title>ArchBook — Your laptop. Your Linux.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <a class="wordmark" href="#home" data-home aria-label="ArchBook home">
+      <img class="arch-mark" src="archlinux-mark-black.svg" alt="" aria-hidden="true">
+      <span>ArchBook</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#range" data-scroll="range">The range</a>
+      <a href="#linux" data-scroll="linux">Linux</a>
+      <a href="#configure" data-scroll="configure">Configure</a>
+    </nav>
+    <button class="nav-config" type="button" data-scroll="configure">Build yours <span aria-hidden="true">↗</span></button>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="main-content">
+    <div class="store-view" id="store-view">
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Introducing the ArchBook range</p>
+          <h1>A laptop that<br><span>feels like yours.</span></h1>
+          <p class="hero-lede">Thoughtful design. Hardware you choose. The freedom of Arch-based Linux, right from the first boot.</p>
+          <div class="hero-ctas">
+            <button class="button button-dark" type="button" data-scroll="configure">Configure your ArchBook <span aria-hidden="true">→</span></button>
+            <a class="button button-text" href="#design" data-scroll="design">Take a closer look <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="mini-check">✓</span> Designed around choice, built for everyday use.</div>
+        </div>
+        <div class="hero-art" aria-label="ArchBook laptop product illustration">
+          <div class="art-glow"></div>
+          <div class="laptop-stage">
+            <div class="closed-laptop" id="hero-laptop">
+              <div class="lid-logo"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div>
+              <div class="lid-edge"></div>
+              <div class="laptop-reflection"></div>
+            </div>
+            <div class="laptop-shadow"></div>
+          </div>
+          <div class="art-label label-left"><span class="label-line"></span><span>Precision-milled aluminium</span></div>
+          <div class="art-label label-right"><span class="label-line"></span><span>A custom Arch-inspired mark</span></div>
+          <div class="art-index" id="hero-model-index">AB—01 <span>·</span> PRODUCT STUDY</div>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Product highlights">
+        <div><span class="strip-number">01</span><span>Made to be yours</span></div>
+        <div><span class="strip-number">02</span><span>Arch-based Linux options</span></div>
+        <div><span class="strip-number">03</span><span>Specs without compromise</span></div>
+      </section>
+
+      <section class="design-section section-wrap" id="design">
+        <div class="section-heading">
+          <p class="eyebrow">Form, considered</p>
+          <h2>Less machine.<br><span>More possibility.</span></h2>
+          <p class="section-lede">A clean silhouette, considered details and a finish that feels right in your hands. ArchBook has its own identity — down to the mark on its lid.</p>
+        </div>
+        <div class="design-feature-grid">
+          <article class="feature-card feature-large">
+            <div class="feature-art feature-art-metal"><div class="mini-device"><div class="mini-mark"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div></div><div class="feature-badge">01 / THE LID</div></div>
+            <div class="feature-copy"><div><h3>A mark of its own.</h3><p>A custom angular symbol sits cleanly on the lid — a small signature for a laptop built around your choices.</p></div><span class="feature-index">01</span></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-art feature-art-detail"><div class="detail-keyboard"><div class="keyboard-row"></div><div class="keyboard-row"></div><div class="keyboard-row short"></div><div class="trackpad"></div></div><span class="feature-art-caption">A quieter kind of detail</span></div>
+            <div class="feature-copy"><div><h3>Purpose in every line.</h3><p>Clean geometry. Balanced proportions. Nothing added without a reason.</p></div><span class="feature-index">02</span></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-art feature-art-colours"><div class="swatch-stack"><span class="swatch silver"></span><span class="swatch graphite"></span><span class="swatch blue"></span></div><span class="feature-art-caption">A spectrum of finishes.</span></div>
+            <div class="feature-copy"><div><h3>Find your finish.</h3><p>Choose the look that fits you, from understated metal tones to expressive colours, with more finishes on higher-tier models.</p></div><span class="feature-index">03</span></div>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="range-section section-wrap" id="range">
+        <div class="section-heading range-heading"><p class="eyebrow">The ArchBook range</p><h2>Six ways to<br><span>make it yours.</span></h2><p class="section-lede">Start with the laptop that fits your day. Move up the range for more performance, more finishes and deeper hardware customisation.</p></div>
+        <div class="range-grid" id="range-grid"></div>
+      </section>
+
+      <section class="linux-section" id="linux">
+        <div class="section-wrap linux-inner">
+          <div class="linux-copy"><p class="eyebrow eyebrow-light">Open by nature</p><h2>Your setup.<br><span>Your way.</span></h2><p>ArchBook is designed with Arch-based Linux in mind. Pick a distribution you already love, or explore something new. Your operating system stays yours — and can be installed on other compatible computers, too.</p><button class="button button-light" type="button" data-scroll="configure">Choose your Linux <span aria-hidden="true">→</span></button></div>
+          <div class="linux-orbit" aria-label="ArchBook operating system selection illustration"><div class="orbit-ring orbit-one"></div><div class="orbit-ring orbit-two"></div><div class="orbit-center"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div><div class="orbit-pill pill-arch">Arch Linux</div><div class="orbit-pill pill-ryoku">Ryoku</div><div class="orbit-pill pill-nyarch">Nyarch</div><div class="orbit-pill pill-garuda">Garuda</div><div class="orbit-caption">ONE LAPTOP. MANY POSSIBILITIES.</div></div>
+        </div>
+      </section>
+
+      <section class="configure-section section-wrap" id="configure">
+        <div class="config-head"><div><p class="eyebrow">Make it yours</p><h2>Your ArchBook,<br><span>your configuration.</span></h2></div><div class="config-head-tools"><p class="config-head-note">Choose your hardware, pick an Arch-based Linux option, and see your configuration update as you go.</p><label class="currency-control">Display prices in <select data-currency aria-label="Display currency"><option value="AUD">Australia · AUD</option><option value="USD">United States · USD</option><option value="EUR">Eurozone · EUR</option><option value="GBP">United Kingdom · GBP</option><option value="NZD">New Zealand · NZD</option><option value="CAD">Canada · CAD</option></select></label></div></div>
+        <div class="config-layout">
+          <div class="config-panel">
+            <div class="config-step"><span class="step-circle">1</span><div><h3>Choose your ArchBook</h3><p>Six laptop models, from everyday essentials to the most configurable flagship.</p></div></div>
+            <div class="model-grid" id="model-grid" role="radiogroup" aria-label="ArchBook laptop model"></div>
+            <div class="config-divider"></div>
+            <div class="config-step"><span class="step-circle">2</span><div><h3>Choose your finish</h3><p id="finish-description">Pick the colour that feels like you.</p></div></div>
+            <div class="finish-options" id="finish-options" role="radiogroup" aria-label="Laptop finish"></div>
+            <div class="config-divider"></div>
+            <div class="config-step"><span class="step-circle">3</span><div><h3>Choose your hardware</h3><p>A balanced setup or more room to create.</p></div></div>
+            <label class="field-label" for="display">Display</label>
+            <div class="select-wrap"><select id="display"><option value="14">14-inch · 2.8K OLED · 120 Hz</option><option value="16">16-inch · 3.2K OLED · 120 Hz</option></select><span>⌄</span></div>
+            <label class="field-label" for="processor">Processor</label>
+            <div class="select-wrap"><select id="processor"><option value="standard">ArchBook Core · 8-core</option><option value="pro">ArchBook Core Pro · 12-core</option></select><span>⌄</span></div>
+            <label class="field-label" for="memory">Unified memory</label>
+            <div class="select-wrap"><select id="memory"><option value="16">16 GB</option><option value="32">32 GB</option><option value="64">64 GB</option></select><span>⌄</span></div>
+            <label class="field-label" for="storage">Storage</label>
+            <div class="select-wrap"><select id="storage"><option value="512">512 GB SSD</option><option value="1024">1 TB SSD</option><option value="2048">2 TB SSD</option></select><span>⌄</span></div>
+            <div class="config-divider"></div>
+            <div class="config-step"><span class="step-circle">4</span><div><h3>Choose your Linux</h3><p>Arch-based systems for different ways of working.</p></div></div>
+            <label class="field-label" for="distro-search">Find an Arch-based operating system</label>
+            <input class="distro-search" id="distro-search" type="search" placeholder="Search 100+ distro options…" autocomplete="off">
+            <label class="field-label" for="distro">Operating system</label>
+            <div class="select-wrap"><select id="distro" aria-describedby="distro-note"></select><span>⌄</span></div>
+            <div class="custom-distro-wrap hidden" id="custom-distro-wrap"><label class="field-label" for="custom-distro">Distribution name</label><input id="custom-distro" type="text" maxlength="60" placeholder="Enter an Arch-based distribution"></div>
+            <label class="field-label" for="desktop">Desktop preference</label>
+            <div class="select-wrap"><select id="desktop"><option value="default">Use the distribution's default</option><option value="kde">KDE Plasma</option><option value="gnome">GNOME</option><option value="hyprland">Hyprland</option><option value="niri">niri</option></select><span>⌄</span></div>
+            <p class="config-footnote" id="distro-note">Catalog includes current projects plus historical or specialist projects; check each project's current status and hardware support. Desktop availability depends on the selected distribution. Your selection is included in the configuration summary.</p>
+            <button class="button button-dark button-wide" id="proceed-button" type="button">Proceed to checkout <span aria-hidden="true">→</span></button>
+            <p class="config-fineprint">Base prices are in Australian dollars (AUD). Other currency amounts use an indicative exchange-rate snapshot dated 16 October 2026.</p>
+          </div>
+          <aside class="config-summary" aria-label="Your current configuration">
+            <div class="summary-topline"><span id="summary-model-kicker">ARCHBOOK ONE</span><span class="summary-live"><i></i> CONFIGURABLE</span></div>
+            <div class="config-device-wrap" id="config-device-wrap">
+              <div class="config-device closed" id="config-device"><div class="config-device-mark"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div><div class="config-device-edge"></div></div>
+            </div>
+            <div class="summary-product-name"><div><h3 id="summary-model-name">ArchBook One</h3><p id="summary-variant">14-inch · Silver</p></div><span class="summary-mark">AB·01</span></div>
+            <div class="summary-rule"></div>
+            <div class="summary-price-row"><span>Estimated total</span><strong id="live-price">A$599</strong></div>
+            <p class="price-note" id="price-note">Price updates with your selected hardware. AUD base pricing; other currencies are indicative conversions.</p><p class="fx-note">Exchange-rate snapshot: 16 Oct 2026. Rates can change.</p>
+            <div class="summary-spec-list" id="live-specs"><div><span>Processor</span><strong>ArchBook Core · 8-core</strong></div><div><span>Memory</span><strong>16 GB</strong></div><div><span>Storage</span><strong>512 GB SSD</strong></div><div><span>Linux</span><strong>Arch Linux</strong></div></div>
+            <div class="summary-bottom"><span class="summary-icon">✳</span><p>Configured around you.<br><strong>Open by nature.</strong></p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="promise-section section-wrap" id="details"><div class="promise-card"><div><p class="eyebrow">A clearer kind of choice</p><h2>Your laptop.<br><span>No lock-in.</span></h2></div><div class="promise-copy"><p>Choose the operating system that fits how you work. The listed distributions are independent projects, and ArchBook does not own them. You can install these systems on other compatible devices, subject to each project's own terms and hardware support.</p><button class="text-arrow" type="button" data-scroll="configure">Find your configuration <span>→</span></button></div><div class="promise-decoration">AB<span>—</span>01</div></div></section>
+    </div>
+
+    <section class="checkout-view hidden" id="checkout-view" aria-labelledby="checkout-title">
+      <div class="checkout-header"><a class="back-link" href="#configure" id="back-to-config">← Back to configuration</a><p class="eyebrow" id="checkout-header-model">ArchBook One</p><h1 id="checkout-title">Review your<br><span>configuration.</span></h1><p class="checkout-lede">Everything in one place, ready to review.</p></div>
+      <div class="checkout-grid"><div class="checkout-card"><div class="checkout-card-heading"><h2>Your ArchBook</h2><span class="pill-label" id="checkout-model-badge">AB—01</span></div><div class="checkout-product-art"><div class="checkout-laptop" id="checkout-laptop"><div class="checkout-logo"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div></div></div><div class="checkout-specs" id="checkout-specs"></div></div>
+        <aside class="checkout-side"><p class="eyebrow">Order summary</p><div class="checkout-line"><span id="checkout-model-name">ArchBook One</span><strong id="checkout-price">A$599</strong></div><label class="currency-control checkout-currency">Display prices in <select data-currency aria-label="Display currency"><option value="AUD">AUD · Australian dollar</option><option value="USD">USD · US dollar</option><option value="EUR">EUR · Euro</option><option value="GBP">GBP · Pound sterling</option><option value="NZD">NZD · New Zealand dollar</option><option value="CAD">CAD · Canadian dollar</option></select></label><div class="checkout-line muted"><span>Shipping</span><span>Calculated later</span></div><div class="checkout-total"><span>Estimated total</span><strong id="checkout-total">A$599</strong></div><button class="button purchase-disabled" type="button" disabled aria-disabled="true">Purchase <span aria-hidden="true">→</span></button><button class="discount-toggle" id="discount-toggle" type="button" aria-expanded="false"><span class="discount-icon">%</span><span>Discount Codes</span><span class="discount-chevron">＋</span></button><div class="discount-panel hidden" id="discount-panel"><label for="discount-code">Enter your discount code</label><div class="discount-entry"><input type="text" id="discount-code" autocomplete="off" placeholder="Enter code" maxlength="24"><button type="button" id="apply-code">Apply</button></div><p class="discount-feedback" id="discount-feedback" aria-live="polite">Have a code? Enter it here.</p></div><p class="checkout-note">Your selected hardware and Linux configuration are listed above.</p></aside>
+      </div>
+    </section>
+
+    <section class="order-view hidden" id="order-view" aria-labelledby="order-title">
+      <div class="order-header"><div class="success-symbol"><img class="arch-success-mark" src="archlinux-mark-black.svg" alt="" aria-hidden="true"></div><p class="eyebrow">Your configuration is ready</p><h1 id="order-title">The details,<br><span>all together.</span></h1><p class="order-lede">Copy your configuration below and paste it into an email to the ArchBook team.</p></div>
+      <div class="order-card"><div class="order-card-top"><div><p class="eyebrow" id="order-model-kicker">ARCHBOOK ONE</p><h2>Configuration details</h2></div><span class="order-code-mark" id="order-model-badge">AB—01</span></div><div class="order-device-row"><div class="order-mini-device" id="order-mini-device"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div><div><h3 id="order-model-name">ArchBook One</h3><p id="order-device-desc">14-inch · Silver</p><strong id="order-price">A$599</strong></div></div><div class="order-config-list" id="order-config-list"></div><div class="order-message"><p class="eyebrow">Email this configuration</p><p class="copy-instruction">Copy this and paste it into an email to the company.</p><div class="email-address-row"><span>To: <strong id="company-email">orders.archbook@outlook.com</strong></span><button class="mini-copy" id="copy-email" type="button" aria-label="Copy company email">Copy email</button></div><textarea id="order-message-text" readonly spellcheck="false" aria-label="Order details to copy"></textarea><button class="button button-dark button-wide" id="copy-order" type="button">Copy configuration <span aria-hidden="true">⧉</span></button><p class="copy-status" id="copy-status" aria-live="polite"></p><button class="button button-purchase-request button-wide" id="purchase-request" type="button">Purchase <span aria-hidden="true">→</span></button></div></div><button class="text-arrow order-back" id="start-again" type="button">← Back to ArchBook</button>
+    </section>
+
+    <section class="purchase-success-view hidden" id="purchase-success-view" aria-labelledby="purchase-success-title">
+      <div class="purchase-success-inner">
+        <div class="purchase-success-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m14 24.5 6.5 6.5L34.5 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <p class="eyebrow">ARCHBOOK · ORDER REQUEST</p>
+        <h1 id="purchase-success-title">Thanks for choosing<br><span>ArchBook.</span></h1>
+        <p class="purchase-success-lede">Your configuration is ready to send. Email the details to the ArchBook team so they can confirm availability, final pricing, shipping and payment.</p>
+        <div class="purchase-success-card">
+          <div class="purchase-success-card-top"><span>YOUR CONFIGURATION</span><span id="success-model-badge">AB—01</span></div>
+          <div class="purchase-success-product"><div class="purchase-success-device" id="success-device"><img src="archlinux-mark-white.svg" alt="" aria-hidden="true"></div><div><h2 id="success-model-name">ArchBook One</h2><p id="success-model-details">14-inch · Silver</p><strong id="success-model-price">A$599</strong></div></div>
+          <div class="purchase-success-email"><span>Send configuration to</span><strong>orders.archbook@outlook.com</strong></div>
+          <a class="button button-dark button-wide" id="email-configuration" href="mailto:orders.archbook@outlook.com">Email your configuration <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="text-arrow purchase-success-back" id="success-back" type="button">← Back to configuration details</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand"><a class="wordmark" href="#home" data-home><img class="arch-mark" src="archlinux-mark-black.svg" alt="" aria-hidden="true"><span>ArchBook</span></a><p>Technology, with room to choose.</p></div><div class="footer-links"><a href="#range" data-scroll="range">The range</a><a href="#linux" data-scroll="linux">Linux</a><a href="#configure" data-scroll="configure">Configure</a></div><div class="footer-backtop"><a href="#home" data-home>Back to top ↑</a></div></div>
+    <div class="footer-legal"><p>ArchBook is an independent laptop concept and is not affiliated with, endorsed by, or sponsored by Arch Linux or any listed Linux distribution. The monochrome Arch Linux logo is used only to identify operating-system compatibility; the name and logo remain the property of their respective owner and are subject to the Arch Linux trademark policy. All distribution names, marks, logos, trademarks and related rights belong to their respective owners. ArchBook does not own or claim ownership of these projects. Each operating system remains available separately and may be installed on other compatible computers, subject to its own license, terms and hardware support. <a href="https://archlinux.org/art/" target="_blank" rel="noopener noreferrer">Arch Linux artwork and logo policy</a>.</p><div class="legal-bottom"><span>Copyright © 2026 ArchBook. All rights reserved.</span><span>Made for the freedom to choose.</span></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
